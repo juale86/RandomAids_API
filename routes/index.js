@@ -9,4 +9,9 @@ router.get('/', function(req, res, next) {
 router.get('/probando', (req, res, next) => {
   res.send({res:'probando cosas'});
 })
+
+router.get('/health,', (req, res, next) => {
+  res.send(200)
+});
+
 module.exports = router;
